@@ -1,0 +1,26 @@
+incd-card {
+    --_incd-card-outline-width: var(--incd-card-outline-width, 2px);
+    --_incd-card-outline-style: var(--incd-card-outline-style, solid);
+    --_incd-card-outline-offset: var(--incd-card-outline-offset, 1px);
+    --_incd-card-outline-color: var(--incd-card-outline-color);
+
+    display: block;
+    position: relative;
+}
+
+incd-card:focus-within {
+    outline: var(--_incd-card-outline-width) var(--_incd-card-outline-style) var(--_incd-card-outline-color, Highlight);
+    outline-color: var(--_incd-card-outline-color, -webkit-focus-ring-color);
+    outline-offset: var(--_incd-card-outline-offset);
+}
+
+incd-card a:focus-visible {
+    outline: none;
+}
+
+incd-card a::after {
+    content: '';
+    display: block;
+    inset: 0;
+    position: absolute;
+}

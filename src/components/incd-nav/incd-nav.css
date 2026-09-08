@@ -1,0 +1,11 @@
+incd-nav [aria-expanded="true"] svg {
+    transform: rotate(180deg);
+}
+
+incd-nav [aria-expanded="false"]+* {
+    display: none;
+}
+
+incd-nav [aria-expanded="true"]+* {
+    display: revert;
+}

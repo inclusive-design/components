@@ -1,0 +1,65 @@
+{
+  "name": "@inclusive-design/components",
+  "version": "0.1.0",
+  "description": "Web components for the Inclusive Design Research Centre.",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && elena build",
+    "lint": "run-s -l lint:*",
+    "lint:eslint": "eslint",
+    "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "prepare": "husky",
+    "prepublish": "npm run build",
+    "start:elena": "elena watch",
+    "start:serve": "serve .",
+    "start": "run-p start:*",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/inclusive-design/components.git"
+  },
+  "keywords": [
+    "elena",
+    "web-components",
+    "inclusive-design"
+  ],
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/inclusive-design/components/issues"
+  },
+  "homepage": "https://github.com/inclusive-design/components#readme",
+  "dependencies": {
+    "@elenajs/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@elenajs/bundler": "^1.0.0",
+    "@elenajs/cli": "^1.0.0",
+    "@inclusive-design/eslint-config": "^1.0.0",
+    "@inclusive-design/markdownlint-config": "^0.1.0",
+    "@inclusive-design/stylelint-config": "^0.1.0",
+    "eslint": "^10.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^17.0.0",
+    "npm-run-all2": "^9.0.0",
+    "rimraf": "^6.0.0",
+    "serve": "^14.0.0"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ],
+    "*.{cjs,js,json,mjs}": [
+      "eslint --fix"
+    ],
+    "*.md": [
+      "eslint --fix",
+      "markdownlint-cli2 --fix"
+    ]
+  }
+}
