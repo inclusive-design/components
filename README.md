@@ -27,4 +27,4 @@ Or install it with npm and include the installed package in your HTML:
 ```
 
 This will register all web components. To import individual web components, see
-the individual web component documentation.
+the individual web component documentation linked under the [Components](#components) section above.
