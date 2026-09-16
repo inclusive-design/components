@@ -1,6 +1,6 @@
 {
   "name": "@inclusive-design/components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web components for the Inclusive Design Research Centre.",
   "main": "dist/bundle.js",
   "type": "module",

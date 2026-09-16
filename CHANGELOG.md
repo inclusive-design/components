@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/inclusive-design/components/compare/v0.1.0...v0.1.1) (2026-09-16)
+
+
+### Bug Fixes
+
+* export card component in default bundle ([#6](https://github.com/inclusive-design/components/issues/6)) ([aa1804b](https://github.com/inclusive-design/components/commit/aa1804bd892c91807b0cd7aedfced098f4a1cada))
+
 ## [0.1.0](https://github.com/inclusive-design/components/compare/v0.1.0...v0.1.0) (2026-09-08)
 
 
