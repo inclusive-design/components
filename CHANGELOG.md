@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/inclusive-design/components/compare/v0.1.1...v0.1.2) (2026-09-16)
+
+
+### Bug Fixes
+
+* bump version ([5e65377](https://github.com/inclusive-design/components/commit/5e653775c06377595bf39d23d7c3fb06d491b3cb))
+
 ## [0.1.1](https://github.com/inclusive-design/components/compare/v0.1.0...v0.1.1) (2026-09-16)
 
 
