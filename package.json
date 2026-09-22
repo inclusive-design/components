@@ -2,7 +2,14 @@
   "name": "@inclusive-design/components",
   "version": "0.1.2",
   "description": "Web components for the Inclusive Design Research Centre.",
-  "main": "dist/bundle.js",
+  "main": "./dist/bundle.js",
+  "module": "./dist/bundle.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./incd-card": "./dist/incd-card.js",
+    "./incd-events": "./dist/incd-events.js",
+    "./incd-nav": "./dist/incd-nav.js"
+  },
   "type": "module",
   "scripts": {
     "build": "rimraf dist && elena build",
@@ -11,7 +18,7 @@
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
     "lint:stylelint": "stylelint \"**/*.css\"",
     "prepare": "husky",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "start:elena": "elena watch",
     "start:serve": "serve .",
     "start": "run-p start:*",
