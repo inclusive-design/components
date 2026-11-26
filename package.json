@@ -42,7 +42,7 @@
     "@elenajs/cli": "^1.0.0",
     "@inclusive-design/eslint-config": "^1.0.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
-    "@inclusive-design/stylelint-config": "^0.1.0",
+    "@inclusive-design/stylelint-config": "^0.2.0",
     "eslint": "^10.0.0",
     "husky": "^9.0.0",
     "lint-staged": "^17.0.0",
